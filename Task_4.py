@@ -45,7 +45,7 @@ t3 = Team()
 t4 = Team()
 
 team_list  = list((t1, t2, t3, t4)) # Storing the team object in the list
-t = open('C:\\Users\Surunga Education\Documents\Python_Class\Assessment\Team.csv')
+t = open('Team.csv')
 
 for lines in t: # Getting the name of the team and storing in the team objects
     lines=lines.rstrip("\n")
@@ -55,7 +55,7 @@ for lines in t: # Getting the name of the team and storing in the team objects
             break
 t.close()
 
-result = open("C:\\Users\Surunga Education\Documents\Python_Class\Assessment\Result.csv") # Reading the games result
+result = open("Result.csv") # Reading the games result
 
 for lines in result: # Updating the stats one by one
     game = lines.split(",")
